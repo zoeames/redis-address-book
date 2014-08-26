@@ -1,10 +1,59 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @base: #71EEB8;
-@font: #3286CF;
+@baseLite: #9FF7D1;
+@baseText: #29CE87;
+@navColor: #78BAEC;
+@navText: #3286C7;
+@otherColor: #B1F976;
+@otherText: #86EE30;
 
 body{
   background-color: saturate(@base, 5%);
   font-family: 'Poiret One', cursive;
-  color: @font;
+  color: @baseText;
+  text-align: center;
+}
+.navbar{
+  background-color: @navColor;
+  color: @navText;
+  border-color: @navText;
+  border: 3px solid;
+}
+.navbar-default .navbar-brand{
+  background-color: @navColor;
+  color: @navText;
 }
 
+.navbar-default .navbar-nav>li>a{
+  background-color: @navColor;
+  color: @navText;
+}
+
+
+h2{
+  text-decoration: underline;
+}
+
+#form{
+  margin-right: auto; 
+  margin-left: auto;
+  background-color: @baseLite;
+  font-weight: 900;
+  font-size: 15px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid @baseText;
+}
+
+.btn{
+  background-color: @base;
+  color: @baseText;
+  border-color: @baseText
+}
+
+input[type='text'], input[type='password'], input[type='email'], textarea {
+  background-color : @baseText;
+  color: @base;
+  text-align: center;
+}

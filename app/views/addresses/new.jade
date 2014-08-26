@@ -1,0 +1,37 @@
+extends ../shared/template
+block content
+  h2 New Contact
+  .row
+    .col-xs-3
+    .col-xs-6#form
+      form(role='form', method='post', action='/addresses')
+        .form-group
+          label(for='name') Name
+          input.form-control#name(type='text', name='name', placeholder='Bob Smith' autofocus=true)
+        .col-xs-6
+          .form-group
+            label(for='email') Email
+            input.form-control#email(type='email', placeholder='bob@aol.com', name='email')
+        .col-xs-6
+          .form-group
+            label(for='phone') Phone
+            input.form-control#phone(type='text', name='phone', placeholder='(925) 696-9696')
+        .form-group
+          label(for='address') Address
+          input.form-control#address(type='text', name='address', placeholder='490 Main Street')
+        .col-xs-4
+          .form-group
+            label(for='city') City
+            input.form-control#city(type='text', name='city', placeholder='Nashville')
+        .col-xs-4
+          .form-group
+            label(for='state') State
+            input.form-control#state(type='text', name='state', placeholder='TN')
+        .col-xs-4
+          .form-group
+            label(for='zip') Zip
+            input.form-control#zip(type='text', name='zip', placeholder='37209')
+        button.btn.btn-primary(type='submit') Add Contact
+    .col-xs-3
+
+block scripts

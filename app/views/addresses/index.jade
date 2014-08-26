@@ -1,0 +1,25 @@
+extends ../shared/template
+block content
+  h2 Address Book
+  table.table.table-striped.table-hover
+    thead
+      tr
+        th Name
+        th Email
+        th Phone
+        th Address
+        th City
+        th State
+        th Zip
+    tbody
+      each address in addresses
+        tr
+          td= address.name
+          td= address.email
+          td= address.phone
+          td= address.address
+          td= address.city
+          td= address.state
+          td= address.zip
+block scripts
+
